@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Média</title>
+    </head>
+
+    <body>
+        <script>
+            // Calculadora Básica - 1442164 - Renzzo Silva Rocha
+
+            let opcao = prompt("Digite a operação desejada: Soma(1) -  Subtração(2) - Multiplicação(3) - Divisão(4)");
+
+            switch (opcao) {
+
+                case "1":
+                    function soma() {
+                        let n1, n2;
+                        do {
+                            n1 = prompt(`Digite o primeiro número: `);
+                            if (isNaN(n1) || n1 === '' || n1 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n1) || n1 === '' || n1 === null);
+
+                        do {
+                            n2 = prompt(`Digite o segundo número: `);
+                            if (isNaN(n2) || n2 === '' || n2 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n2) || n2 === '' || n2 === null);
+                        return parseFloat(n1) + parseFloat(n2);
+
+                    }
+
+                    let resultadoSoma = soma();
+                    alert(`O resultado da adição é: ${resultadoSoma}`);
+                    break;
+
+                case "2":
+                    function subtracao() {
+                        let n1, n2;
+                        do {
+                            n1 = prompt(`Digite o primeiro número: `);
+                            if (isNaN(n1) || n1 === '' || n1 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n1) || n1 === '' || n1 === null);
+
+                        do {
+                            n2 = prompt(`Digite o segundo número: `);
+                            if (isNaN(n2) || n2 === '' || n2 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n2) || n2 === '' || n2 === null);
+                        return parseFloat(n1) - parseFloat(n2);
+
+                    }
+
+                    let resultadoSubtracao = subtracao();
+                    alert(`O resultado da subtração é: ${resultadoSubtracao}`);
+                    break;
+
+                case "3":
+                    function multiplicacao() {
+                        let n1, n2;
+                        do {
+                            n1 = prompt(`Digite o primeiro número: `);
+                            if (isNaN(n1) || n1 === '' || n1 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n1) || n1 === '' || n1 === null);
+
+                        do {
+                            n2 = prompt(`Digite o segundo número: `);
+                            if (isNaN(n2) || n2 === '' || n2 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n2) || n2 === '' || n2 === null);
+                        return parseFloat(n1) * parseFloat(n2);
+
+                    }
+
+                    let resultadoMultiplicacao = multiplicacao();
+                    alert(`O resultado da multiplicação é: ${resultadoMultiplicacao}`);
+                    break;
+
+                case "4":
+                    function divisao() {
+                        let n1, n2;
+                        do {
+                            n1 = prompt(`Digite o primeiro número: `);
+                            if (isNaN(n1) || n1 === '' || n1 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n1) || n1 === '' || n1 === null);
+
+                        do {
+                            n2 = prompt(`Digite o segundo número: `);
+                            if (isNaN(n2) || n2 === '' || n2 === null) {
+                                alert("Por favor, insira um número válido.");
+                            }
+                        } while (isNaN(n2) || n2 === '' || n2 === null);
+                        return parseFloat(n1) / parseFloat(n2);
+
+                    }
+
+                    let resultadoDivisao = divisao();
+                    alert(`O resultado da divisão é: ${resultadoDivisao}`);
+                    break;
+
+            }
+
+        </script>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
